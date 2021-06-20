@@ -1,0 +1,28 @@
+# github.com/cornelk/hashmap v1.0.1
+## explicit
+github.com/cornelk/hashmap
+# github.com/dchest/siphash v1.1.0
+github.com/dchest/siphash
+# github.com/google/go-cmp v0.5.6
+## explicit
+github.com/google/go-cmp/cmp
+github.com/google/go-cmp/cmp/internal/diff
+github.com/google/go-cmp/cmp/internal/flags
+github.com/google/go-cmp/cmp/internal/function
+github.com/google/go-cmp/cmp/internal/value
+# github.com/lwahlmeier/pyfmt v0.0.1
+## explicit
+github.com/lwahlmeier/pyfmt
+# github.com/pkg/errors v0.9.1
+## explicit
+github.com/pkg/errors
+# github.com/tevino/abool v1.2.0
+## explicit
+github.com/tevino/abool
+# gotest.tools v2.2.0+incompatible
+## explicit
+gotest.tools/assert
+gotest.tools/assert/cmp
+gotest.tools/internal/difflib
+gotest.tools/internal/format
+gotest.tools/internal/source
