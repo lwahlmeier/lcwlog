@@ -447,3 +447,24 @@ func BenchmarkSyncNoFormat(b *testing.B) {
 
 //TODO: add date/time test
 //TODO: add file log error test
+
+type TestLogger struct {
+	lock sync.Mutex
+	data map[string][][]any
+}
+
+func (tl *TestLogger) Debug(msgs ...interface{}) {
+	tl.lock.Lock()
+	defer tl.lock.Unlock()
+	tl.data["debug"] = append(tl.data["debug"], msgs)
+}
+func (tl *TestLogger) Warn(msgs ...interface{}) {
+	tl.lock.Lock()
+	defer tl.lock.Unlock()
+	tl.data["warn"] = append(tl.data["warn"], msgs)
+}
+func (tl *TestLogger) Fatal(msgs ...interface{}) {
+	tl.lock.Lock()
+	defer tl.lock.Unlock()
+	tl.data["fatal"] = append(tl.data["fatal"], msgs)
+}
